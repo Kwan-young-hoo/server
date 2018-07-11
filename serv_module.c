@@ -104,11 +104,11 @@ void error_handling(char *message);
 			}
 
 		void error_handling(char* message)
-		{
+			{
 			fputs(message, stderr);
 			fputs("\n", stderr);
 			close(client_socket);
-		}					
+			}					
 
 
 
