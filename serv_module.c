@@ -62,7 +62,6 @@ void error_handling(char *message);
 
 		void socket_produce()
 			{
-		
 
 				server_socket = socket(PF_INET, SOCK_STREAM, 0);
 				if(-1 == server_socket){
@@ -83,7 +82,6 @@ void error_handling(char *message);
 		void accept_wait()
 			{
 		
-	
 				if(-1 == listen(server_socket, 5)){
 				error_handling("listen() error");
 				}
@@ -105,9 +103,9 @@ void error_handling(char *message);
 
 		void error_handling(char* message)
 			{
-			fputs(message, stderr);
-			fputs("\n", stderr);
-			close(client_socket);
+				fputs(message, stderr);
+				fputs("\n", stderr);
+				close(client_socket);
 			}					
 
 
