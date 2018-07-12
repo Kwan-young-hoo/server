@@ -10,7 +10,6 @@
 
 #define BUFF_SIZE 1024
 
-void serv_function();
 void server_daemon();
 void socket_produce();
 void accept_wait();
